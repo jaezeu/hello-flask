@@ -1,8 +1,16 @@
-# py-flask
-
 ## Introduction
 
 This repo is used to build a simple hello world flask application and deploy it in a docker environment. The sections below explain on how you can install docker in MacOS / Ubuntu(WSL)
+
+## GitHub File/Folder Structure
+
+| File Name | Location | Usage |
+| --- | --- | --- |
+| README.md | `root` | Contains the details of contents present in the repo, including usage and architectural decisions |
+| .gitignore | `root` | Used to ignore intentionally untracked files, so that they do not get committed to git (https://git-scm.com/docs/gitignore) |
+| app.py | `root` | Application source code |
+| Dockerfile | `root` | Instructional file for docker to build a image. (https://docs.docker.com/engine/reference/builder/) |
+| requirements.txt | `root` | https://pip.pypa.io/en/stable/reference/requirements-file-format/ |
 
 ## Docker Installation
 
