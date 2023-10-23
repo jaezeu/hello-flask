@@ -27,26 +27,31 @@ Remember to launch your Docker Desktop before going to the next section.
 Ensure that you have the following 3 files in the directory where you are about to run the commands:
 
 1) app.py
-2) Dockerfile
-3) requirements.txt
+2) Dockerfile (https://docs.docker.com/engine/reference/builder/)
+3) requirements.txt (https://pip.pypa.io/en/stable/reference/requirements-file-format/)
 
 ![image](https://github.com/jaezeu/py-flask/assets/48310743/e49e85a5-9905-4348-9b52-8675982abe4b)
 
+You may have to run the commands below in sudo if your user is not in a docker user group. To run docker as a non root user: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+
 ```
 # Build a docker image locally
-sudo docker build -t flask-app .
+docker build -t flask-app .
 
 # Listing your built images
-sudo docker images
+docker images
 
 # Starting your local container with port mapping
-sudo docker run -d -p 8080:8080 flask-app
+docker run -d -p 8080:8080 flask-app
 
 # List all your containers(Running and stopped)
-sudo docker ps -a
+docker ps -a
 
 # To stop and remove your container
-sudo docker stop <container ID>
-sudo docker rm <container ID>
+docker stop <container ID>
+docker rm <container ID>
+
+# To remove your docker images
+docker rmi <image ID>
 
 ```
