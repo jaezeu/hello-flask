@@ -30,7 +30,8 @@ Ensure that you have the following 3 files in the directory where you are about 
 2) Dockerfile (https://docs.docker.com/engine/reference/builder/)
 3) requirements.txt (https://pip.pypa.io/en/stable/reference/requirements-file-format/)
 
-![image](https://github.com/jaezeu/py-flask/assets/48310743/e49e85a5-9905-4348-9b52-8675982abe4b)
+![image](https://github.com/jaezeu/hello-flask/assets/48310743/7ddb7999-988c-4c01-ad94-65729f17e78a)
+
 
 You may have to run the commands below in sudo if your user is not in a docker user group. To run docker as a non root user: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
 
