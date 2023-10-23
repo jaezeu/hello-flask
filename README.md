@@ -44,14 +44,17 @@ Ensure that you have the following 3 files in the directory where you are about 
 You may have to run the commands below in sudo if your user is not in a docker user group. To run docker as a non root user: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
 
 ```
-# Build a docker image locally
+# Build a docker image locally 
 docker build -t flask-app .
 
-# Listing your built images
+# Listing your built images 
 docker images
 
-# Starting your local container with port mapping
+# Starting your local container with port mapping from host port to container port(-p) and in detached mode(-d)
 docker run -d -p 8080:8080 flask-app
+
+# List your running containers
+docker ps
 
 # List all your containers(Running and stopped)
 docker ps -a
@@ -64,3 +67,5 @@ docker rm <container ID>
 docker rmi <image ID>
 
 ```
+
+For all docker commands: https://docs.docker.com/engine/reference/commandline/cli/
